@@ -1,4 +1,6 @@
 import "./globals.css";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,9 @@ export default function RootLayout({ children }) {
       <body
         className={`antialiased`}
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
