@@ -1,0 +1,65 @@
+[
+    {
+        "name" : "Limited Edition Super Bowl LV Portal X",
+        "photo" : "/glassSlide/1-min-360x259.jpg",
+        "rating" : 0,
+        "price" : 23.40,
+        "id" : 1
+    },
+    {
+        "name" : "Holbrook™ MotoGP™",
+        "photo" : "/glassSlide/4-min-360x259.jpg",
+        "rating" : 5,
+        "price" : 43.45,
+        "id" : 2
+    },
+    {
+        "name" : "Sutro Lite Patrick Mahomes II Collection",
+        "photo" : "/glassSlide/5-min-360x259.jpg",
+        "rating" : 2,
+        "price" : 12.32,
+        "id" : 3
+    },
+    {
+        "name" : "Oakley Frogskins 9013 Sunglasses",
+        "photo" : "/glassSlide/12-min-360x259.jpg",
+        "rating" : 3,
+        "price" : 43.32,
+        "id" : 4
+    },
+    {
+        "name" : "Turbine Prizm™ Snow Collection",
+        "photo" : "/glassSlide/cate-1-1.jpg",
+        "rating" : 1,
+        "price" : 54.45,
+        "id" : 5
+    },
+    {
+        "name" : "Holbrook™ Mix Team USA",
+        "photo" : "/glassSlide/cate-2-1.jpg",
+        "rating" : 0,
+        "price" : 64.76,
+        "id" : 6
+    },
+    {
+        "name" : "Sutro Lite Patrick Mahomes II Collection",
+        "photo" : "/glassSlide/cate-3-1.jpg",
+        "rating" : 5,
+        "price" : 34.98,
+        "id" : 7
+    },
+    {
+        "name" : "Holbrook™ Mix Team USA",
+        "photo" : "/glassSlide/cate-4-1.jpg",
+        "rating" : 4,
+        "price" : 34.54,
+        "id" : 8
+    },
+    {
+        "name" : "Oakley Frogskins 9013 Sunglasses",
+        "photo" : "/glassSlide/12-min-360x259.jpg",
+        "rating" : 5,
+        "price" : 10.32,
+        "id" : 9
+    }
+]

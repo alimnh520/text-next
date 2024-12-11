@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Vintage soft classic Sweater",
+        "company": "Alukas",
+        "img1": "/recent/2_49d7c0e0-8dc2-4954-ba6d-f6c89959074b.webp",
+        "img2": "/recent/img24.webp",
+        "price": 143,
+        "discount": 0
+    },
+    {
+        "id": 2,
+        "name": "Blak Stripes Stone Sweatshirt",
+        "company": "Alberta Ferretti",
+        "img1": "/recent/2_323c1811-dd43-447a-8721-9b63912e1227.webp",
+        "img2": "/recent/img26.webp",
+        "price": 220,
+        "discount": 23
+    },
+    {
+        "id": 3,
+        "name": "Yelow Stone Stripe Sweatshirt",
+        "company": "C.P. Company",
+        "img1": "/recent/2_804a0ca4-d7eb-48ff-96fe-409e74a9d756.webp",
+        "img2": "/recent/img27.webp",
+        "price": 100,
+        "discount": 0
+
+    },
+    {
+        "id": 4,
+        "name": "Blue Rockstar Plain Hat",
+        "company": "BaubleBar",
+        "img1": "/recent/2_cd0119b7-1782-4625-a3a8-b5726a100d8f.webp",
+        "img2": "/recent/img21.webp",
+        "price": 104,
+        "discount": 5
+
+    },
+    {
+        "id": 5,
+        "name": "Stonewashed Stripe Tee",
+        "company": "Adrianna Papell",
+        "img1": "/recent/2_fc7081bc-5f29-4b46-98ad-a50de2ba6649.webp",
+        "img2": "/recent/img22.webp",
+        "price": 120,
+        "discount": 0
+
+    },
+    {
+        "id": 6,
+        "name": "The Hat and Skin Bundle",
+        "company": "alukas",
+        "img1": "/recent/3_d32d13d0-c673-4fd1-8d9b-9f4a916ee1cf.webp",
+        "img2": "/recent/img25.webp",
+        "price": 138,
+        "discount": 29
+    },
+    {
+        "id": 7,
+        "name": "Classic Birds Stripe Sweatshirt",
+        "company": "Ballantyne",
+        "img1": "/recent/4_39475644-cebd-4375-808f-fe4a936a60d5.webp",
+        "img2": "/recent/img23.webp",
+        "price": 73,
+        "discount": 0
+
+    },
+    {
+        "id": 8,
+        "name": "Black Stripe Hats",
+        "company": "BaubleBar",
+        "img1": "/recent/2_eeeb693a-05c1-40ac-b404-a1e5b716d7d7.webp",
+        "img2": "/recent/img28.webp",
+        "price": 150,
+        "discount": 39
+    }
+]
