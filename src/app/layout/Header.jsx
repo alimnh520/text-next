@@ -56,7 +56,7 @@ const Header = () => {
                         </li>
 
                         <li className={`${linkCls}`}>
-                            <Link href="">Men</Link >
+                            <Link href="/components/men">Men</Link >
                             <MdOutlineKeyboardArrowDown className="-mt-0.5 group-hover:rotate-180 transition-all duration-300" />
                             <div className={`absolute top-20 -left-[390px] h-96 w-screen px-10 py-3 group-hover:block hidden bg-white animate-animateOver`}>
                                 <MegaMenu />

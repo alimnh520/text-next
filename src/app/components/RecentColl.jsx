@@ -57,7 +57,7 @@ const RecentCollection = () => {
                                     <p className={`bg-blue-500 text-sm px-2 py-1 text-white`}>{allEml.price > 100 ? `HOT` : 'Sell'}</p>
                                 </div>
 
-                                <div className="h-10 w-32 absolute sm:grid top-1/2 left-1/2 -translate-x-1/2 hidden grid-cols-3 divide-x divide-gray-400 rounded-md group-hover:grid" onMouseOver={() => setImageChange(allEml.id)}>
+                                <div className="h-10 w-32 absolute top-1/2 left-1/2 -translate-x-1/2 hidden grid-cols-3 divide-x divide-gray-400 rounded-md group-hover:grid" onMouseOver={() => setImageChange(allEml.id)}>
                                     <Link href="" className='flex items-center justify-center rounded-tl-md rounded-bl-md text-2xl bg-white hover:bg-black hover:text-white transition-all duration-300 relative'>
                                         <MdOutlineShoppingCart />
                                     </Link>

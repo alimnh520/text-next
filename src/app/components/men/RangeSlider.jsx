@@ -1,9 +1,12 @@
 'use client'
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { BioContext } from "./StoreData";
 
 const RangeSlider = () => {
-    const [minValue, setMinValue] = useState(100);
-    const [maxValue, setMaxValue] = useState(500);
+    const {minValue, setMinValue, maxValue, setMaxValue} = useContext(BioContext);
+    
+    // const [minValue, setMinValue] = useState(10); // Default minimum value
+    // const [maxValue, setMaxValue] = useState(300); // Default maximum value
 
     const handleMinChange = (e) => {
         const value = Math.min(Number(e.target.value), maxValue - 1);
@@ -16,40 +19,40 @@ const RangeSlider = () => {
     };
 
     return (
-        <div className="flex flex-col items-center p-4 relative right-5 h-screen w-full">
+        <div className="flex flex-col items-center p-4 relative right-5 w-full">
             {/* Range Track */}
-            <div className="mt-72 relative w-48 h-1 bg-gray-200 rounded-full">
+            <div className="relative w-48 h-1 bg-gray-200 rounded-full">
                 <div
                     className="absolute h-1 bg-red-500 rounded-full"
                     style={{
-                        left: `${(minValue / 1000) * 100}%`,
-                        right: `${100 - (maxValue / 1000) * 100}%`,
+                        left: `${((minValue - 10) / 490) * 100}%`, // Normalize for range 10 to 500
+                        right: `${100 - ((maxValue - 10) / 490) * 100}%`,
                     }}
                 ></div>
 
                 {/* Lower Thumb */}
                 <input
                     type="range"
-                    min="0"
-                    max="1000"
+                    min="10"
+                    max="500"
                     value={minValue}
                     onChange={handleMinChange}
                     className="absolute w-full -top-1.5 appearance-none bg-transparent pointer-events-none"
                     style={{
-                        zIndex: minValue > 900 ? 5 : 3,
+                        zIndex: minValue > 490 ? 5 : 3,
                     }}
                 />
 
                 {/* Upper Thumb */}
                 <input
                     type="range"
-                    min="0"
-                    max="1000"
+                    min="10"
+                    max="500"
                     value={maxValue}
                     onChange={handleMaxChange}
                     className="absolute w-full -top-1.5 appearance-none bg-transparent pointer-events-none"
                     style={{
-                        zIndex: maxValue < 100 ? 5 : 3,
+                        zIndex: maxValue < 20 ? 5 : 3,
                     }}
                 />
             </div>

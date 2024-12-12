@@ -19,10 +19,10 @@ export const TopHeader = ({country, currencySymbol, setCountry}) => {
                     <option value="SA">saudi arab</option>
                 </select>
                 <p className="flex items-center justify-center ">Currency :<span className="font-semibold ml-1">{currencySymbol[country]}</span></p>
-                <div className="flex items-center justify-center gap-x-3 cursor-pointer">
+                <Link href="/components/login-form" className="flex items-center justify-center gap-x-3 cursor-pointer">
                     <IoMdLogIn className="text-2xl" />
                     <p className="text-sm">login</p>
-                </div>
+                </Link>
             </div>
         </div>
     )
