@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "title": "From life was you fish...",
+        "date": "05 july 2024",
+        "img": "/blogs/post_1.jpg.webp"
+    },
+    {
+        "id": 1,
+        "title": "The Amazing Hubble",
+        "date": "12 june 2024",
+        "img": "/blogs/post_2.jpg.webp"
+    },
+    {
+        "id": 2,
+        "title": "Astronomy Or Astrology",
+        "date": "20 may 2024",
+        "img": "/blogs/post_3.jpg.webp"
+    },
+    {
+        "id": 3,
+        "title": "Asteroids telescope",
+        "date": "09 april 2024",
+        "img": "/blogs/post_4.jpg.webp"
+    },
+    {
+        "id": 4,
+        "title": "From life was you fish...",
+        "date": "15 march 2024",
+        "img": "/blogs/post_5.jpg.webp"
+    },
+    {
+        "id": 5,
+        "title": "The Amazing Hubble",
+        "date": "20 feb 2024",
+        "img": "/blogs/post_6.jpg.webp"
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "name": "Vintage soft classic Sweater",
+        "company": "Alukas",
+        "img1": "/women/latest1.jpg.webp",
+        "price": 143,
+        "discount": 0
+    },
+    {
+        "id": 2,
+        "name": "Blak Stripes Stone Sweatshirt",
+        "company": "Alberta Ferretti",
+        "img1": "/women/latest2.jpg.webp",
+        "price": 220,
+        "discount": 23
+    },
+    {
+        "id": 3,
+        "name": "Yelow Stone Stripe Sweatshirt",
+        "company": "C.P. Company",
+        "img1": "/women/latest3.jpg.webp",
+        "price": 100,
+        "discount": 0
+
+    },
+    {
+        "id": 4,
+        "name": "Blue Rockstar Plain Hat",
+        "company": "BaubleBar",
+        "img1": "/women/latest4.jpg.webp",
+        "price": 104,
+        "discount": 5
+
+    },
+    {
+        "id": 5,
+        "name": "Stonewashed Stripe Tee",
+        "company": "Adrianna Papell",
+        "img1": "/women/latest5.jpg.webp",
+        "price": 120,
+        "discount": 0
+
+    },
+    {
+        "id": 6,
+        "name": "The Hat and Skin Bundle",
+        "company": "alukas",
+        "img1": "/women/latest6.jpg.webp",
+        "price": 138,
+        "discount": 29
+    },
+    {
+        "id": 7,
+        "name": "Classic Birds Stripe Sweatshirt",
+        "company": "Ballantyne",
+        "img1": "/women/latest7.jpg.webp",
+        "price": 73,
+        "discount": 0
+    },
+    {
+        "id": 8,
+        "name": "Black Stripe Hats",
+        "company": "BaubleBar",
+        "img1": "/women/latest8.jpg.webp",
+        "price": 150,
+        "discount": 39
+    }
+]

@@ -1,6 +1,7 @@
 'use client';
 
 const page = () => {
+    
     return (
         <div className="flex items-center justify-center w-full h-screen bg-gray-50">
             <div className="w-[700px] h-full max-w-md p-6 rounded-md shadow-2xl">

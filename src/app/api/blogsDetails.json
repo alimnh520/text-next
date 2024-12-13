@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "date": 24,
+        "img" : "/blogs/single_blog_1.jpg.webp",
+        "month": "june",
+        "title": "Google inks pact for new 35-storey office",
+        "details": "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
+        "catalog": "Travel, Lifestyle",
+        "comment" : 3
+    },
+    {
+        "id": 1,
+        "date": 20,
+        "img" : "/blogs/single_blog_2.jpg.webp",
+        "month": "june",
+        "title": "Google inks pact for new 35-storey office",
+        "details": "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
+        "catalog": "Travel, Lifestyle",
+        "comment" : 12
+    },
+    {
+        "id": 2,
+        "date": 19,
+        "img" : "/blogs/single_blog_3.jpg.webp",
+        "month": "july",
+        "title": "Google inks pact for new 35-storey office",
+        "details": "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
+        "catalog": "Travel, Lifestyle",
+        "comment" : 8
+    },
+    {
+        "id": 3,
+        "date": 10,
+        "img" : "/blogs/single_blog_4.jpg.webp",
+        "month": "august",
+        "title": "Google inks pact for new 35-storey office",
+        "details": "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
+        "catalog": "Travel, Lifestyle",
+        "comment" : 7
+    },
+    {
+        "id": 4,
+        "date": 14,
+        "img" : "/blogs/single_blog_5.jpg.webp",
+        "month": "april",
+        "title": "Google inks pact for new 35-storey office",
+        "details": "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
+        "catalog": "Travel, Lifestyle",
+        "comment" : 2
+    }
+]

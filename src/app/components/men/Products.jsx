@@ -1,27 +1,40 @@
 'use client'
 
 import React, { useContext } from 'react'
-import products from '../../api/Recent.json'
+import menCol from '../../api/Recent.json'
+import womenCol from '../../api/girlsCollection.json'
 import Link from 'next/link'
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import { CiHeart } from 'react-icons/ci'
 import { IoSearchOutline } from 'react-icons/io5'
 import { BioContext } from './StoreData'
+import { usePathname } from 'next/navigation'
 
 
 const Products = () => {
-    const {minValue, maxValue} = useContext(BioContext);
-    console.log(minValue, maxValue);
-    
+    const pathname = usePathname();
+    console.log(pathname);
+
+    const { minValue, maxValue } = useContext(BioContext);
+
+    const setPath = () => {
+        if (pathname == '/components/women') {
+            return womenCol
+        } else {
+            return menCol
+        }
+    }
     return (
         <div className='w-full grid grid-cols-3 grid-rows-3 gap-5'>
             {
-                products.filter((currElm) => {
+                setPath().filter((currElm) => {
                     return maxValue >= currElm.price && minValue <= currElm.price
                 }).map((allEml) => {
                     return (
-                        <div className='flex flex-col items-center justify-center relative group' key={allEml.id}>
-                            <img src={allEml.img1} alt="" className='w-full text-gray-800' />
+                        <div className='flex flex-col items-center justify-center relative group overflow-hidden' key={allEml.id}>
+                            <div className="w-full h-72 overflow-hidden text-gray-800">
+                                <img src={allEml.img1} alt="" className='h-full w-full group-hover:scale-110 transition-all duration-300' />
+                            </div>
                             <p className='uppercase text-center mt-4 hover:text-red-500 transition-all'>{allEml.company}</p>
                             <p className='font-semibold text-center text-lg my-1 hover:text-red-500 transition-all'>{allEml.name}</p>
                             <div className="flex items-center justify-center font-roboto font-semibold">

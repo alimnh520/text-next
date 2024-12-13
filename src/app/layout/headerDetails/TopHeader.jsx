@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa6";
 import { IoMdLogIn } from "react-icons/io";
 
 export const TopHeader = ({country, currencySymbol, setCountry}) => {
@@ -9,20 +10,16 @@ export const TopHeader = ({country, currencySymbol, setCountry}) => {
                 <Link href="">Privacy</Link>
                 <Link href="">FAQ</Link>
             </div>
-            <div className="flex items-center justify-center gap-x-5">
-                <img src={`https://flagsapi.com/${country}/flat/64.png`} className="h-10" />
-                <select name="" className="outline-none uppercase cursor-pointer" onChange={(e) => setCountry(e.target.value)}>
-                    <option value="US">USA</option>
-                    <option value="BD">bangladesh</option>
-                    <option value="IN">india</option>
-                    <option value="PK">pakistan</option>
-                    <option value="SA">saudi arab</option>
-                </select>
-                <p className="flex items-center justify-center ">Currency :<span className="font-semibold ml-1">{currencySymbol[country]}</span></p>
-                <Link href="/components/login-form" className="flex items-center justify-center gap-x-3 cursor-pointer">
-                    <IoMdLogIn className="text-2xl" />
-                    <p className="text-sm">login</p>
-                </Link>
+            <div className="w-5/12 grid grid-cols-3 divide-x divide-gray-300 gap-x-5 text-sm">
+                <Link href="" className="w-full text-center">My Wishlist</Link>
+                <Link href="" className="w-full text-center">Track Your Order</Link>
+                <div className="flex items-center justify-center space-x-4 text-gray-500">
+                    <Link href=""><FaFacebook/></Link>
+                    <Link href=""><FaInstagram/></Link>
+                    <Link href=""><FaTwitter/></Link>
+                    <Link href=""><FaLinkedin/></Link>
+                    <Link href=""><FaYoutube/></Link>
+                </div>
             </div>
         </div>
     )
