@@ -4,7 +4,7 @@ import { IoMdLogIn } from "react-icons/io";
 
 export const TopHeader = ({country, currencySymbol, setCountry}) => {
     return (
-        <div className="w-full h-8 px-20 flex items-center justify-between bg-white border-b text-sm">
+        <div className="w-full h-8 px-20 flex items-center justify-between bg-white border-b text-sm sm:hidden">
             <div className="flex items-center justify-center gap-x-5 text-sm">
                 <Link href="">About Us</Link>
                 <Link href="">Privacy</Link>

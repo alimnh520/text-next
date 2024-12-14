@@ -34,16 +34,17 @@ const Header = () => {
         };
     }, [lastScrollTop]);
 
-    const linkCls = "relative group flex items-center justify-center gap-x-1 font-bold before:absolute before:content-[''] before:h-[3px] before:hover:w-10 before:mr-2 before:bg-red-500 before:bottom-0 before:transition-all before:duration-300 transition-all duration-300 hover:text-red-500 group h-20 uppercase text-sm"
+    const linkCls = "relative group flex items-center justify-center gap-x-1 font-bold before:absolute before:content-[''] before:h-[3px] before:hover:w-10 before:mr-2 before:bg-red-500 before:bottom-0 before:transition-all before:duration-300 transition-all duration-300 hover:text-red-500 group h-20 uppercase text-sm sm:before:hidden sm:h-10  sm:w-full sm:justify-start"
 
     return (
         <div className="w-full flex flex-col items-center justify-center font-josefin">
             <TopHeader />
-            <div className={`w-full h-20 flex items-center justify-between border-b px-20 transition-all duration-300 bg-white z-20 ${scrollY ? 'fixed top-0' : ' absolute'} ${scrollUp == 0 ? 'top-8' : 'top-0'}`}>
+            <div className={`w-full h-20 flex items-center justify-between border-b px-20 transition-all duration-300 bg-white z-20 ${scrollY ? 'fixed top-0' : ' absolute'} ${scrollUp == 0 ? 'top-8' : 'top-0'} sm:flex-col sm:h-auto sm:pb-5 sm:items-start sm:px-5`}>
                 <img src="/logo/nh-logo-monogram-emblem-style-with-crown-shape-design-template-free-vector-removebg-preview.png" alt="" className="w-32 animate-firstAnimate bg-white" />
+                
 
-                <nav className="flex items-center justify-center gap-x-16">
-                    <ul className="flex items-center justify-center gap-x-10">
+                <nav className="flex items-center justify-center gap-x-16 sm:flex-col sm:items-start sm:mt-5">
+                    <ul className="flex items-center justify-center gap-x-10 sm:flex-col sm:items-start">
 
                         <li className={`${linkCls} ${pathName == '/' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`}>
                             <Link href="/">Home</Link >
@@ -51,10 +52,7 @@ const Header = () => {
 
                         <li className={`${linkCls} ${pathName == '/components/men' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`}>
                             <Link href="/components/men">Men</Link >
-                            <MdOutlineKeyboardArrowDown className="-mt-0.5 group-hover:rotate-180 transition-all duration-300" />
-                            <div className={`absolute top-20 -left-[390px] h-96 w-screen px-10 py-3 group-hover:block hidden bg-white animate-animateOver`}>
-                                <MegaMenu />
-                            </div>
+                            
                         </li>
 
                         <li className={`${linkCls} ${pathName == '/components/women' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`}>
@@ -62,14 +60,14 @@ const Header = () => {
                         </li>
 
                         <li className={`${linkCls} ${pathName == '/' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`}>
-                            <p className=" absolute px-1 rounded-[3px] text-white bg-red-500 top-1 right-5 text-[10px] before:absolute before:h-2 before:w-4 before:bg-red-500 before:-bottom-0.5 before:left-2 before:-rotate-[30deg]">New</p>
+                            <p className=" absolute px-1 rounded-[3px] text-white bg-red-500 top-1 right-5 text-[10px] before:absolute before:-z-10 before:h-2 before:w-4 before:bg-red-500 before:-bottom-0.5 before:left-2 before:-rotate-[30deg] sm:-top-5">New</p>
                             <Link href="">Baby Collections</Link >
                         </li>
 
-                        <li className={`${linkCls} ${pathName == '/' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`}>
+                        <li className={`${linkCls} ${pathName == '/components/shops' && '/components/checkout' && '/components/cart' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0'}`}>
                             <Link href="">Pages</Link >
                             <MdOutlineKeyboardArrowDown className="-mt-0.5 group-hover:rotate-180 transition-all duration-300" />
-                            <div className={`absolute top-20 h-44 w-40 py-3 group-hover:flex hidden bg-white items-center justify-center animate-animateOver `}>
+                            <div className={`absolute top-20 h-44 w-40 py-3 group-hover:flex hidden bg-white items-center justify-center sm:-top-1 sm:left-20 sm:border sm:border-gray-400 sm:z-20`}>
                                 <BlogMenu />
                             </div>
                         </li>
@@ -83,7 +81,7 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <div className="flex items-center justify-center gap-x-4 text-3xl">
+                    <div className="flex items-center justify-center gap-x-4 text-3xl sm:mt-5">
                         <Link href="" className="hover:text-red-500 transition-all duration-300">
                             <IoSearchOutline />
                         </Link>
