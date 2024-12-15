@@ -42,7 +42,7 @@ const Header = () => {
         <div className="w-full flex flex-col items-center justify-center font-josefin">
             <TopHeader />
             <div className={`w-full h-20 flex items-center justify-between border-b px-20 transition-all duration-300 bg-white z-20 ${scrollY ? 'fixed top-0' : ' absolute'} ${scrollUp == 0 ? 'top-8 sm:top-16' : 'top-0 sm:pt-5'} sm:flex-col sm:h-auto sm:items-start sm:px-5`}>
-                <button className={`w-28 h-8 bg-gray-600 absolute right-5 ${scrollUp == 0 ? 'top-0' : 'top-5'} z-50 hidden sm:flex items-center justify-between px-2 text-white font-bold`} onClick={() => setNavbar(!navbar)}>
+                <button className={`w-28 h-10 bg-gray-600 absolute right-5 ${scrollUp == 0 ? '-top-1' : 'top-5'} z-50 hidden sm:flex items-center justify-between px-2 text-white font-bold`} onClick={() => setNavbar(!navbar)}>
                     MENU 
                     <GiHamburgerMenu className="text-xl"/>
                 </button>
