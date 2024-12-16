@@ -14,13 +14,13 @@ const Home = () => {
         <div>
             <HomeSlide/>
             <ProductSlide/>
-            <Fashion/>
-            <Discount/>
-            <RecentCollection/>
-            <Trading/>
-            <Reviews/>
-            <LatestNews/>
-            <Facilities/>
+            {/* <Fashion/> */}
+            {/* <Discount/> */}
+            {/* <RecentCollection/> */}
+            {/* <Trading/> */}
+            {/* <Reviews/> */}
+            {/* <LatestNews/> */}
+            {/* <Facilities/> */}
         </div>
     )
 }

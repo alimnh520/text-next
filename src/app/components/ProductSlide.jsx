@@ -12,9 +12,9 @@ const ProductSlide = () => {
     const [windowWidth, setWindowWidth] = useState(6);
     useEffect(() => {
         if (window.innerWidth <= 767) {
-            setWindowWidth(3)
+            setWindowWidth(3);
         } else {
-            setWindowWidth(6)
+            setWindowWidth(6);
         }
     });
     console.log(windowWidth);
@@ -22,7 +22,7 @@ const ProductSlide = () => {
     
     return (
         <div className="w-full flex flex-col items-center px-10 -mt-20 relative z-10 sm:-mt-5 sm:px-5">
-            <div className="w-full h-full flex gap-y-4 flex-col items-center bg-white shadow-[1px_1px_5px_rgba(0,0,0,0.4)] p-7">
+            <div className="w-full h-full flex gap-y-4 flex-col items-center bg-white shadow-[1px_1px_5px_rgba(0,0,0,0.4)] p-7 sm:px-2 sm:py-5 ">
                 <p className=' uppercase text-xl font-bold'>Our Best Seller Icons</p>
                 <Swiper
                     autoplay={{
@@ -40,7 +40,7 @@ const ProductSlide = () => {
                             return (
                                 <SwiperSlide className='flex flex-col items-center gap-y-2 cursor-pointer' key={allEml.id}>
                                     <img src={allEml.photo} alt="" className='border w-full' />
-                                    <p className='font-semibold'>{allEml.name}</p>
+                                    <p className='font-semibold sm:text-sm'>{allEml.name}</p>
                                 </SwiperSlide>
                             )
                         })

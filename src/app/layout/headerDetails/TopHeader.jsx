@@ -10,9 +10,9 @@ export const TopHeader = ({country, currencySymbol, setCountry}) => {
                 <Link href="">Privacy</Link>
                 <Link href="">FAQ</Link>
             </div>
-            <div className="w-5/12 grid grid-cols-3 divide-x divide-gray-300 gap-x-5 text-sm sm:w-full">
-                <Link href="" className="w-full text-center">My Wishlist</Link>
-                <Link href="" className="w-full text-center">Track Your Order</Link>
+            <div className="w-5/12 grid grid-cols-3 divide-x divide-gray-300 gap-x-5 text-sm sm:w-full sm:flex sm:divide-none sm:items-center sm:justify-center sm:space-x-0">
+                <Link href="" className="w-full text-center sm:w-fit">My Wishlist</Link>
+                <Link href="" className="w-full text-center sm:w-fit">Track Your Order</Link>
                 <div className="flex items-center justify-center space-x-4 text-gray-500 sm:px-5">
                     <Link href="" className="hover:text-red-500 transition-all duration-300"><FaFacebook/></Link>
                     <Link href="" className="hover:text-red-500 transition-all duration-300"><FaInstagram/></Link>

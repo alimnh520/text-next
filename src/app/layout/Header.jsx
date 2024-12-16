@@ -69,11 +69,11 @@ const Header = () => {
                             <Link href="">Baby Collections</Link >
                         </li>
 
-                        <li className={`${linkCls} delay-200 ${pathName == '/components/shops' && '/components/checkout' && '/components/cart' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0'}`} onClick={() => setNavbar(!navbar)}>
+                        <li className={`${linkCls} delay-200 ${pathName == '/components/shops' && '/components/checkout' && '/components/cart' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0'}`}>
                             <Link href="">Pages</Link >
-                            <MdOutlineKeyboardArrowDown className="-mt-0.5 group-hover:rotate-180 transition-all duration-300" />
+                            <MdOutlineKeyboardArrowDown className="-mt-0.5 group-hover:rotate-180 transition-all duration-300 sm:-rotate-90" />
                             <div className={`absolute top-20 h-44 w-40 py-3 group-hover:flex hidden bg-white items-center justify-center sm:-top-1 sm:left-20 sm:border sm:border-gray-400 sm:z-20`}>
-                                <BlogMenu />
+                                <BlogMenu navbar={navbar} setNavbar={setNavbar}/>
                             </div>
                         </li>
 
