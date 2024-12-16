@@ -67,7 +67,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="flex text-sm font-light items-center justify-center h-16">
+            <div className="flex text-sm font-light items-center justify-center h-16 sm:text-center">
                 <p>Copyright ©2024 All rights reserved | This template is made with <span className="text-red-500">❤</span> by <span className="text-red-500">Nahid Hasan</span></p>
             </div>
         </div>

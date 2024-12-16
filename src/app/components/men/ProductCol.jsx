@@ -5,7 +5,7 @@ import Brand from './Brand'
 
 const ProductCol = () => {
     return (
-        <div className="w-64 flex flex-col items-center border border-gray-300 space-y-4 p-4">
+        <div className="w-64 flex flex-col items-center border border-gray-300 space-y-4 p-4 sm:w-10/12">
             <div className="relative w-full">
                 <select className="appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-full shadow-sm focus:outline-none focus:border-gray-500 custom-select">
                     <option value="">Category</option>

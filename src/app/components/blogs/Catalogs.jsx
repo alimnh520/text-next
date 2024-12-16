@@ -4,7 +4,7 @@ import blogsDetails from '../../api/blogsPost.json'
 
 const Catalogs = () => {
     return (
-        <div className='h-screen w-4/12'>
+        <div className='h-screen w-4/12 sm:w-full sm:h-auto sm:pb-5'>
             <div className="w-full p-8 bg-gray-100 flex items-center justify-center">
                 <input type="text" className='h-14 w-8/12 outline-none px-5 placeholder:text-gray-500 text-sm' placeholder='Search Keyword' />
                 <button className='w-4/12 h-14 bg-red-500 hover:bg-white border border-red-500 hover:text-red-500 font-medium text-lg text-white transition-all duration-300'>Search</button>

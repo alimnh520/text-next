@@ -12,14 +12,14 @@ const page = () => {
     return (
         <div className='w-full flex flex-col'>
             
-            <div className="w-full h-44 flex flex-col items-center space-y-2 justify-center bg-red-100 bg-cover bg-center mt-20">
-                <p className='text-5xl font-bold'>Contact Us</p>
+            <div className="w-full h-44 flex flex-col items-center space-y-2 justify-center bg-red-100 bg-cover bg-center mt-20 sm:h-28">
+                <p className='text-5xl font-bold sm:text-4xl'>Contact Us</p>
                 <div className="grid grid-cols-2 text-sm text-gray-600 divide-x-2 divide-gray-600">
                     <Link href="/" className="w-32 text-end pr-2">Home</Link>
                     <p className="text-start px-3">Contact Us</p>
                 </div>
             </div>
-            <div className="w-full h-64 px-28 flex space-x-24 items-center justify-center">
+            <div className="w-full h-64 px-28 flex space-x-24 items-center justify-center sm:px-5 sm:h-auto sm:flex-col sm:space-x-0">
                 <div className="flex flex-col space-y-4 items-center justify-center">
                     <IoCall className='text-5xl font-bold text-green-600' />
                     <p className='text-4xl font-bold'>Phone</p>

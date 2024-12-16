@@ -2,7 +2,7 @@ import React from 'react'
 
 const Message = () => {
     return (
-        <div className='w-full px-20 h-[500px] flex flex-col items-center mt-16'>
+        <div className='w-full px-20 h-[500px] flex flex-col items-center mt-16 sm:mt-8 sm:px-5'>
             <p className='text-4xl font-bold'>Leave Message</p>
 
             <form action="" method='post' className='w-full flex flex-col items-center'>

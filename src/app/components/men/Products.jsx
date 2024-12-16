@@ -25,15 +25,15 @@ const Products = () => {
         }
     }
     return (
-        <div className='w-full grid grid-cols-3 grid-rows-3 gap-5'>
+        <div className='w-full grid grid-cols-3 grid-rows-3 gap-5 sm:grid-cols-1 sm:grid-rows-none sm:mt-10'>
             {
                 setPath().filter((currElm) => {
                     return maxValue >= currElm.price && minValue <= currElm.price
                 }).map((allEml) => {
                     return (
                         <div className='flex flex-col items-center justify-center relative group overflow-hidden' key={allEml.id}>
-                            <div className="w-full h-72 overflow-hidden text-gray-800">
-                                <img src={allEml.img1} alt="" className='h-full w-full group-hover:scale-110 transition-all duration-300' />
+                            <div className="w-full h-72 overflow-hidden text-gray-800 sm:h-80">
+                                <img src={allEml.img1} alt="" className='h-full w-full group-hover:scale-110 transition-all duration-300 sm:object-cover sm:object-center' />
                             </div>
                             <p className='uppercase text-center mt-4 hover:text-red-500 transition-all'>{allEml.company}</p>
                             <p className='font-semibold text-center text-lg my-1 hover:text-red-500 transition-all'>{allEml.name}</p>
