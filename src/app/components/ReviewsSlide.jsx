@@ -36,7 +36,7 @@ const ReviewSlider = () => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Pagination]}
-                slidesPerView={2}
+                slidesPerView={window.innerWidth < 768 ? 1 : 2}
                 spaceBetween={40}
                 loop
                 className=" w-full h-72 relative flex items-center justify-center"

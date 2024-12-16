@@ -19,10 +19,10 @@ const RecentCollection = () => {
 
     return (
         <div className="w-full h-auto flex gap-y-4 flex-col items-center p-5">
-            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold'> 
-                <div className='w-52 h-px bg-gray-400'></div> 
+            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-2xl'> 
+                <div className='w-52 h-px bg-gray-400 sm:w-10'></div> 
                 Recent Collection 
-                <div className='w-52 h-px bg-gray-400'></div>
+                <div className='w-52 h-px bg-gray-400 sm:w-10'></div>
             </div>
             <p className=' uppercase font-semibold'>Collect your loves with our newest arrivals</p>
             <Swiper
@@ -35,10 +35,10 @@ const RecentCollection = () => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-                slidesPerView={4}
+                slidesPerView={window.innerWidth < 768 ? 1 : 4}
                 spaceBetween={30}
                 loop
-                className=" w-full h-[450px] relative flex items-center justify-center"
+                className=" w-full h-[450px] relative flex items-center justify-center sm:h-auto"
             >
                 {
                     recentItems.map((allEml) => {

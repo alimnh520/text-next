@@ -5,8 +5,8 @@ import TradingColl from './TradingColl';
 const Trading = () => {
     const [content, setContent] = useState("men");
     return (
-        <div className="flex flex-col px-28 py-10 w-full h-[700px]">
-            <nav className="space-x-4 mb-8 flex items-center justify-between border-b border-b-gray-200">
+        <div className="flex flex-col px-28 py-10 w-full h-[700px] sm:h-auto sm:px-5">
+            <nav className="space-x-4 mb-8 flex items-center justify-between border-b border-b-gray-200 sm:flex-col">
                 <p className='text-4xl font-semibold'>Trending This Week</p>
                 <div className="flex items-center justify-center gap-x-5">
                     <button
@@ -40,7 +40,7 @@ const Trading = () => {
                 {content === "men" && (
                     <div>
                         <h2 className="text-2xl py-5 font-semibold">Men</h2>
-                        <div className="h-96  w-full">
+                        <div className="h-96 sm:h-auto  w-full">
                             <TradingColl />
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const Trading = () => {
                 {content === "women" && (
                     <div>
                         <h2 className="text-2xl py-5 font-semibold">Women</h2>
-                        <div className="h-96 w-full">
+                        <div className="h-96 sm:h-auto w-full">
                             <TradingColl />
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Trading = () => {
                 {content === "baby" && (
                     <div>
                         <h2 className="text-2xl py-5 font-semibold">Baby</h2>
-                        <div className="h-96 w-full">
+                        <div className="h-96 sm:h-auto w-full">
                             <TradingColl />
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Trading = () => {
                 {content === "fashion" && (
                     <div>
                         <h2 className="text-2xl py-5 font-semibold">Fashion</h2>
-                        <div className="h-96 w-full">
+                        <div className="h-96 sm:h-auto w-full">
                             <TradingColl />
                         </div>
                     </div>
