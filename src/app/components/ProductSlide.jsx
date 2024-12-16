@@ -9,16 +9,6 @@ import apiGlass from '../api/Glasses.json';
 import { useEffect, useState } from 'react';
 
 const ProductSlide = () => {
-    const [windowWidth, setWindowWidth] = useState(6);
-    useEffect(() => {
-        if (window.innerWidth <= 767) {
-            setWindowWidth(3);
-        } else {
-            setWindowWidth(6);
-        }
-    });
-    console.log(windowWidth);
-    
     
     return (
         <div className="w-full flex flex-col items-center px-10 -mt-20 relative z-10 sm:-mt-5 sm:px-5">
@@ -30,7 +20,7 @@ const ProductSlide = () => {
                         disableOnInteraction: false,
                     }}
                     modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-                    slidesPerView={windowWidth}
+                    slidesPerView={window.innerWidth < 768 ? 3 : 6}
                     spaceBetween={30}
                     loop
                     className=" w-full bg-white relative flex items-center justify-center"
