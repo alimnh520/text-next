@@ -18,16 +18,16 @@ const page = () => {
             <p className='w-full py-2 text-center bg-black '>
                 Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <Link href="" className=' underline underline-offset-8 font-semibold decoration-2 text-amber-500 hover:tracking-wider transition-all duration-300'>Shop Now</Link>
             </p>
-            <div className="w-full h-40 gap-y-5 bg-red-100 flex flex-col items-center justify-center">
+            <div className="w-full h-40 gap-y-5 bg-red-100 flex flex-col items-center justify-center sm:h-28">
                 <p className="text-3xl font-bold text-black">Product Details</p>
                 <div className="grid grid-cols-2 text-sm text-gray-600 divide-x-2 divide-gray-600 mr-16">
                     <Link href="/" className="w-32 text-end pr-2">Home</Link>
                     <Link href="/" className="w-32 text-center">Product details</Link>
                 </div>
             </div>
-            <div className="w-10/12 h-[450px] mt-10 py-9 px-16 bg-red-500 grid gap-x-10 grid-cols-3 items-center justify-center">
-                <img src="/likeproduct/latest7.jpg.webp" alt="" className="h-full" />
-                <div className="col-span-2 ">
+            <div className="w-10/12 h-[450px] mt-10 sm:mt-0 py-9 px-16 bg-red-500 grid gap-x-10 grid-cols-3 items-center justify-center sm:w-full sm:h-auto sm:gap-x-0 sm:flex sm:flex-col sm:grid-cols-none sm:grid-rows-none sm:p-5 sm:py-5 sm:space-y-5">
+                <img src="/likeproduct/latest7.jpg.webp" alt="" className="h-full sm:w-full sm:h-auto" />
+                <div className="col-span-2 sm:w-full">
                     <p className="text-4xl font-normal">The Rage of Dragons</p>
                     <p className="text-sm mt-3">By Evan Winter</p>
                     <p className="text-4xl font-semibold mt-7">$50.00</p>
@@ -46,29 +46,29 @@ const page = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col px-28 py-10 w-full">
-                <nav className="space-x-4 mb-8">
+            <div className="flex flex-col px-28 py-10 w-full sm:px-5 sm:py-5">
+                <nav className="space-x-4 mb-8 sm:mb-5 sm:w-full sm:flex sm: items-center sm: justify-between">
                     <button
                         onClick={() => setContent("descriptions")}
-                        className={`px-4 py-2  ${content == "descriptions" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-3 sm:py-1.5  ${content == "descriptions" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Descriptions
                     </button>
                     <button
                         onClick={() => setContent("author")}
-                        className={`px-4 py-2 ${content == "author" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-3 sm:py-1.5 ${content == "author" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Author
                     </button>
                     <button
                         onClick={() => setContent("comments")}
-                        className={`px-4 py-2 ${content == "comments" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-3 sm:py-1.5 ${content == "comments" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Comments
                     </button>
                     <button
                         onClick={() => setContent("review")}
-                        className={`px-4 py-2 ${content == "review" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-3 sm:py-1.5 ${content == "review" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Review
                     </button>

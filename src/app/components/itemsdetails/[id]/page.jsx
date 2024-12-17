@@ -40,18 +40,18 @@ const page = ({ params }) => {
     }, []);
 
     return (
-        <div className='w-full text-white pt-28 flex flex-col items-center justify-center bg-gradient-to-r from-blue-950 via-blue-800 to-purple-900'>
-            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold'>
-                <div className='w-52 h-px bg-gray-400 font-josefin'></div>
+        <div className='w-full text-white pt-28 flex flex-col items-center justify-center bg-gradient-to-r from-blue-950 via-blue-800 to-purple-900 sm:pb-5'>
+            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-2xl'>
+                <div className='w-52 h-px bg-gray-400 font-josefin sm:w-20'></div>
                 Items Details
-                <div className='w-52 h-px bg-gray-400'></div>
+                <div className='w-52 h-px bg-gray-400 sm:w-20'></div>
             </div>
             <div className="flex flex-col pt-10 items-center justify-center">
                 {
                     RecentColl.filter((allElm) => allElm.id == id).map((currElm) => {
                         return (
                             <div className="flex flex-col items-center justify-center" key={currElm.id}>
-                                <div className='flex items-center justify-center gap-x-10'>
+                                <div className='flex items-center justify-center gap-x-10 sm:flex-col sm:gap-x-0 sm:space-y-5'>
                                     <div className='w-72 h-96 p-5 rounded-md bg-gradient-to-tr from-red-500 via-blue-500 to-green-500 flex items-center justify-center '>
                                         <div ref={tiltRef} className='w-full h-full overflow-hidden rounded-md'>
                                             <img
