@@ -4,12 +4,12 @@ import blogsDetails from '../../api/blogsPost.json'
 
 const Catalogs = () => {
     return (
-        <div className='h-screen w-4/12 sm:w-full sm:h-auto sm:pb-5'>
-            <div className="w-full p-8 bg-gray-100 flex items-center justify-center">
+        <div className='h-screen w-5/12 sm:w-full sm:h-auto sm:pb-5'>
+            <div className="w-full p-8 md:p-4 bg-gray-100 flex items-center justify-center">
                 <input type="text" className='h-14 w-8/12 outline-none px-5 placeholder:text-gray-500 text-sm' placeholder='Search Keyword' />
                 <button className='w-4/12 h-14 bg-red-500 hover:bg-white border border-red-500 hover:text-red-500 font-medium text-lg text-white transition-all duration-300'>Search</button>
             </div>
-            <div className="w-full mt-8 p-8 flex flex-col items-start bg-gray-100">
+            <div className="w-full mt-8 p-8 md:p-4 flex flex-col items-start bg-gray-100">
                 <h3 className='text-xl font-semibold border-b border-b-gray-300 w-full pb-5'>Category</h3>
 
                 <div className="w-full mt-8 grid grid-cols-1 grid-rows-6 divide-y divide-gray-300">
@@ -22,7 +22,7 @@ const Catalogs = () => {
                 </div>
             </div>
 
-            <div className="w-full mt-8 p-8 flex flex-col items-start bg-gray-100">
+            <div className="w-full mt-8 p-8 md:p-4 flex flex-col items-start bg-gray-100">
                 <h3 className='text-xl font-semibold border-b border-b-gray-300 w-full pb-5'>Recent Post</h3>
 
                 <div className="w-full h-96 overflow-y-scroll mt-8 grid space-y-5 grid-cols-1">
@@ -42,7 +42,7 @@ const Catalogs = () => {
                 </div>
             </div>
 
-            <div className="w-full mt-8 p-8 flex flex-col items-start bg-gray-100">
+            <div className="w-full mt-8 p-8 md:p-4 flex flex-col items-start bg-gray-100">
                 <h3 className='text-xl font-semibold border-b border-b-gray-300 w-full pb-5'>Tag Clouds</h3>
 
                 <div className="w-full mt-8 flex flex-wrap text-sm gap-2 text-gray-600">
@@ -57,7 +57,7 @@ const Catalogs = () => {
                 </div>
             </div>
 
-            <div className="w-full mt-8 p-8 flex flex-col items-start bg-gray-100">
+            <div className="w-full mt-8 p-8 md:p-4 flex flex-col items-start bg-gray-100">
                 <h3 className='text-xl font-semibold border-b border-b-gray-300 w-full pb-5'>Instagram Feeds</h3>
 
                 <div className="w-full h-48 mt-8 grid gap-2 grid-cols-3 grid-rows-2 ">
@@ -71,7 +71,7 @@ const Catalogs = () => {
             </div>
 
 
-            <div className="w-full mt-8 p-8 flex flex-col items-start bg-gray-100">
+            <div className="w-full mt-8 p-8 md:p-4 flex flex-col items-start bg-gray-100">
                 <h3 className='text-xl font-semibold border-b border-b-gray-300 w-full pb-5'>Newsletter</h3>
 
                 <div className="w-full mt-8 flex space-y-5 flex-col items-center justify-center">

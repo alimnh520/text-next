@@ -18,11 +18,11 @@ const RecentCollection = () => {
     const [imgChange, setImageChange] = useState(null);
 
     return (
-        <div className="w-full h-auto flex gap-y-4 flex-col items-center p-5">
+        <div className="w-full h-auto flex gap-y-4 flex-col items-center p-5 md:px-10">
             <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-2xl'> 
-                <div className='w-52 h-px bg-gray-400 sm:w-10'></div> 
+                <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div> 
                 Recent Collection 
-                <div className='w-52 h-px bg-gray-400 sm:w-10'></div>
+                <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
             </div>
             <p className=' uppercase font-semibold'>Collect your loves with our newest arrivals</p>
             <Swiper
@@ -35,7 +35,7 @@ const RecentCollection = () => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-                slidesPerView={window.innerWidth < 768 ? 1 : 4}
+                slidesPerView={window.innerWidth <= 768 ? 1 : 4 && window.innerWidth >= 768 ? 2 : 4 || window.innerWidth < 1024 ? 2 : 4}
                 spaceBetween={30}
                 loop
                 className=" w-full h-[450px] relative flex items-center justify-center sm:h-auto"

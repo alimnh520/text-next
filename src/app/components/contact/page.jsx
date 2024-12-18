@@ -19,7 +19,7 @@ const page = () => {
                     <p className="text-start px-3">Contact Us</p>
                 </div>
             </div>
-            <div className="w-full h-64 px-28 flex space-x-24 items-center justify-center sm:px-5 sm:h-auto sm:flex-col sm:space-x-0">
+            <div className="w-full h-64 px-28 flex space-x-24 items-center justify-center sm:px-5 sm:h-auto sm:flex-col sm:space-x-0 md:space-x-0 md:flex-none md:grid md:grid-cols-2 md:grid-rows-2 md:h-auto md:gap-5 md:pt-5">
                 <div className="flex flex-col space-y-4 items-center justify-center">
                     <IoCall className='text-5xl font-bold text-green-600' />
                     <p className='text-4xl font-bold'>Phone</p>

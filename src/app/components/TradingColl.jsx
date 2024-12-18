@@ -27,7 +27,7 @@ const TradingColl = () => {
                 disableOnInteraction: false,
             }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-            slidesPerView={window.innerWidth < 768 ? 1 : 4}
+            slidesPerView={window.innerWidth <= 768 ? 1 : 4 && window.innerWidth >= 768 ? 2 : 4 || window.innerWidth < 1024 ? 2 : 4}
             spaceBetween={30}
             loop
             className=" w-full h-full relative flex items-center justify-center"

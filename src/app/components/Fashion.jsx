@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Fashion = () => {
     return (
-        <div className="w-full px-20 my-8 flex gap-x-10 items-center justify-center z-10 sm:px-10 sm:flex-col sm:space-y-8">
+        <div className="w-full px-20 my-8 flex gap-x-10 items-center justify-center z-10 sm:px-10 sm:flex-col sm:space-y-8 md:px-10 md:gap-x-5">
             <div className="size-80 flex flex-col items-center justify-end text-xl font-bold text-white overflow-hidden bg-gray-800 group">
 
                 <div className="flex flex-col items-center justify-center relative top-7 gap-y-5 group-hover:-top-5 transition-all duration-300 group-hover:gap-y-1">

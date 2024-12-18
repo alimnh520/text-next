@@ -4,7 +4,7 @@ const page = () => {
     
     return (
         <div className="flex items-center justify-center w-full h-screen bg-gray-50">
-            <div className="w-[700px] h-full max-w-md p-6 rounded-md shadow-2xl">
+            <div className="w-[700px] h-full p-6 rounded-md shadow-2xl md:w-10/12">
                 {/* Title */}
                 <h1 className="text-2xl font-bold text-center text-gray-900">Login</h1>
                 <p className="text-center text-gray-500 mt-2">

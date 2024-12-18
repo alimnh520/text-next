@@ -20,7 +20,7 @@ const ProductSlide = () => {
                         disableOnInteraction: false,
                     }}
                     modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-                    slidesPerView={window.innerWidth < 768 ? 3 : 6}
+                    slidesPerView={window.innerWidth <= 768 ? 3 : 6 && window.innerWidth >= 768 ? 4 : 6 || window.innerWidth < 1024 ? 4 : 6}
                     spaceBetween={30}
                     loop
                     className=" w-full bg-white relative flex items-center justify-center"

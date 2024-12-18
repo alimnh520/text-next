@@ -14,7 +14,7 @@ const page = () => {
     const router = useRouter();
     const [content, setContent] = useState("descriptions");
     return (
-        <div className="h-auto py-20 w-full flex flex-col items-center text-white">
+        <div className="h-auto py-20 w-full flex flex-col items-center text-white md:mt-36 md:py-10">
             <p className='w-full py-2 text-center bg-black '>
                 Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <Link href="" className=' underline underline-offset-8 font-semibold decoration-2 text-amber-500 hover:tracking-wider transition-all duration-300'>Shop Now</Link>
             </p>
@@ -25,9 +25,9 @@ const page = () => {
                     <Link href="/" className="w-32 text-center">Product details</Link>
                 </div>
             </div>
-            <div className="w-10/12 h-[450px] mt-10 sm:mt-0 py-9 px-16 bg-red-500 grid gap-x-10 grid-cols-3 items-center justify-center sm:w-full sm:h-auto sm:gap-x-0 sm:flex sm:flex-col sm:grid-cols-none sm:grid-rows-none sm:p-5 sm:py-5 sm:space-y-5">
+            <div className="w-10/12 h-[450px] mt-10 sm:mt-0 py-9 px-16 bg-red-500 grid gap-x-10 grid-cols-3 items-center justify-center sm:w-full sm:h-auto sm:gap-x-0 sm:flex sm:flex-col sm:grid-cols-none sm:grid-rows-none sm:p-5 sm:py-5 sm:space-y-5 md:w-full md:grid-cols-2">
                 <img src="/likeproduct/latest7.jpg.webp" alt="" className="h-full sm:w-full sm:h-auto" />
-                <div className="col-span-2 sm:w-full">
+                <div className="col-span-2 sm:w-full md:col-span-1">
                     <p className="text-4xl font-normal">The Rage of Dragons</p>
                     <p className="text-sm mt-3">By Evan Winter</p>
                     <p className="text-4xl font-semibold mt-7">$50.00</p>
@@ -46,29 +46,29 @@ const page = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col px-28 py-10 w-full sm:px-5 sm:py-5">
-                <nav className="space-x-4 mb-8 sm:mb-5 sm:w-full sm:flex sm: items-center sm: justify-between">
+            <div className="flex flex-col px-28 py-10 w-full sm:px-5 sm:py-5 md:px-10">
+                <nav className="space-x-4 mb-8 sm:mb-5 sm:w-full sm:flex sm: items-center sm:justify-start sm:space-x-2">
                     <button
                         onClick={() => setContent("descriptions")}
-                        className={`px-4 py-2 sm:px-3 sm:py-1.5  ${content == "descriptions" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-2 sm:py-1 sm:text-sm ${content == "descriptions" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Descriptions
                     </button>
                     <button
                         onClick={() => setContent("author")}
-                        className={`px-4 py-2 sm:px-3 sm:py-1.5 ${content == "author" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-2 sm:py-1 sm:text-sm ${content == "author" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Author
                     </button>
                     <button
                         onClick={() => setContent("comments")}
-                        className={`px-4 py-2 sm:px-3 sm:py-1.5 ${content == "comments" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-2 sm:py-1 sm:text-sm ${content == "comments" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Comments
                     </button>
                     <button
                         onClick={() => setContent("review")}
-                        className={`px-4 py-2 sm:px-3 sm:py-1.5 ${content == "review" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
+                        className={`px-4 py-2 sm:px-2 sm:py-1 sm:text-sm ${content == "review" ? "bg-red-500" : "bg-blue-500"} text-white rounded`}
                     >
                         Review
                     </button>

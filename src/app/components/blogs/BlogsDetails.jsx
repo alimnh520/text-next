@@ -6,7 +6,7 @@ import { FaComments } from "react-icons/fa";
 
 const BlogsDetails = () => {
     return (
-        <div className='w-8/12 flex flex-col space-y-10 sm:w-full'>
+        <div className='w-7/12 flex flex-col space-y-10 sm:w-full'>
             {
                 blogsDetails.map((currElm) => {
                     return (
