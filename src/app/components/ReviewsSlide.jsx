@@ -6,8 +6,19 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import SliderCard from './SlideCard';
+import { useEffect, useState } from 'react';
 
 const ReviewSlider = () => {
+    const [getWidth, setGetWidth] = useState(window.innerWidth);
+    
+    useEffect(() => {
+        if (getWidth > 768 && getWidth < 1024 ) {
+            setGetWidth(1);
+        } else {
+            setGetWidth(2);
+        }
+    },[]);
+
     const reviewText1 = "Hi I'am purchased this theme a few days ago and this is very amazing, they give me great help with some setup issues."
     const reviewText2 = "The theme is amazing, flexible and working fine! Updates are always timely. But their customer support is what makes One kit really great for me."
     const reviewText3 = "Absolutely love the Onekit theme. I have used it on numerous websites and hands down, by far, the best one page theme"
@@ -36,7 +47,7 @@ const ReviewSlider = () => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Pagination]}
-                slidesPerView={window.innerWidth <= 768 ? 1 : 2 && window.innerWidth >= 768 ? 1 : 2 || window.innerWidth < 1024 ? 1 : 2}
+                slidesPerView={getWidth}
                 spaceBetween={40}
                 loop
                 className=" w-full h-72 relative flex items-center justify-center"

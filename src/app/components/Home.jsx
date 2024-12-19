@@ -8,20 +8,22 @@ import Reviews from './Reviews'
 import Facilities from './Facilities'
 import LatestNews from './LatestNews'
 import Trading from './Trading'
+import ContextAnimation from './ContextAnimation'
 
 const Home = () => {
+    
     return (
-        <div>
-            <HomeSlide/>
-            <ProductSlide/>
-            <Fashion/>
-            <Discount/>
-            <RecentCollection/>
-            <Trading/>
-            <Reviews/>
-            <LatestNews/>
-            <Facilities/>
-        </div>
+        <ContextAnimation>
+            <HomeSlide />
+            <ProductSlide />
+            <Fashion />
+            <Discount />
+            <RecentCollection />
+            <Trading />
+            <Reviews />
+            <LatestNews />
+            <Facilities />
+        </ContextAnimation>
     )
 }
 

@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,6 +16,17 @@ import Link from 'next/link';
 
 const TradingColl = () => {
     const [imgChange, setImageChange] = useState(null);
+    const [getWidth, setGetWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        if (getWidth > 768 && getWidth < 1024) {
+            setGetWidth(2);
+        } else if (getWidth < 768) {
+            setGetWidth(1);
+        } else {
+            setGetWidth(4);
+        }
+    }, []);
     return (
         <Swiper
             navigation={{
@@ -27,7 +38,7 @@ const TradingColl = () => {
                 disableOnInteraction: false,
             }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-            slidesPerView={window.innerWidth <= 768 ? 1 : 4 && window.innerWidth >= 768 ? 2 : 4 || window.innerWidth < 1024 ? 2 : 4}
+            slidesPerView={getWidth}
             spaceBetween={30}
             loop
             className=" w-full h-full relative flex items-center justify-center"
