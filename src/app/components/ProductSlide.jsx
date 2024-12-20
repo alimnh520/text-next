@@ -22,7 +22,7 @@ const ProductSlide = () => {
     },[]);
 
     return (
-        <div className="w-full flex flex-col items-center px-10 -mt-20 relative z-10 sm:mt-0 sm:px-0">
+        <div className="w-full flex flex-col items-center px-10 -mt-20 relative z-10 sm:mt-0 sm:px-0 hidden-animation opacity-0 transition-all duration-700">
             <div className="w-full h-full flex gap-y-4 flex-col items-center bg-white shadow-[1px_1px_5px_rgba(0,0,0,0.4)] p-7 sm:px-2 sm:py-5 ">
                 <p className=' uppercase text-xl font-bold'>Our Best Seller Icons</p>
                 <Swiper

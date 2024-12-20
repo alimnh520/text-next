@@ -30,12 +30,12 @@ const RecentCollection = () => {
 
     return (
         <div className="w-full h-auto flex gap-y-4 flex-col items-center p-5 md:px-10">
-            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-2xl'>
+            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-2xl rotate-x-90 hidden-animation opacity-0 transition-all duration-1000'>
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
                 Recent Collection
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
             </div>
-            <p className=' uppercase font-semibold'>Collect your loves with our newest arrivals</p>
+            <p className=' uppercase font-semibold rotate-x-90 hidden-animation opacity-0 transition-all duration-1000'>Collect your loves with our newest arrivals</p>
             <Swiper
                 navigation={{
                     nextEl: '.custom-next',
@@ -49,12 +49,12 @@ const RecentCollection = () => {
                 slidesPerView={getWidth}
                 spaceBetween={30}
                 loop
-                className=" w-full h-[450px] relative flex items-center justify-center sm:h-auto"
+                className=" w-full h-[450px] relative flex items-center justify-center sm:h-auto rotate-y-90 opacity-0 transition-all duration-1000 hidden-animation"
             >
                 {
                     recentItems.map((allEml) => {
                         return (
-                            <SwiperSlide className='flex flex-col items-center justify-center relative group' key={allEml.id}>
+                            <SwiperSlide className={`flex flex-col items-center justify-center relative group `} key={allEml.id}>
                                 <img src={allEml.id === imgChange ? allEml.img1 : allEml.img2} alt="" className='w-full text-gray-800' onMouseOver={() => setImageChange(allEml.id)} onMouseOut={() => setImageChange(null)} />
                                 <p className='uppercase text-center mt-4 hover:text-red-500 transition-all'>{allEml.company}</p>
                                 <p className='font-semibold text-center text-lg my-1 hover:text-red-500 transition-all'>{allEml.name}</p>

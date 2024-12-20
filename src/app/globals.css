@@ -263,12 +263,24 @@ input[type="range"]::-moz-range-thumb {
   display: none;
 }
 
+
 .hidden-animation {
   opacity: 0;
   transition: all 1s ease-in-out;
 }
-
+.rotate-x-90{
+  transform: rotateX(90deg);
+}
+.rotate-y-90{
+  transform: rotateY(90deg);
+}
+.move-rotate{
+  transform: rotate(180deg);
+}
+.move-all{
+  transform: translate(-100px, -100px);
+}
 .animate {
   opacity: 1;
-  transform: translate(0);
+  transform: translate(0) rotate(0deg);
 }
