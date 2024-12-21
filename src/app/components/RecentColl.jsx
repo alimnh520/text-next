@@ -30,7 +30,7 @@ const RecentCollection = () => {
 
     return (
         <div className="w-full h-auto flex gap-y-4 flex-col items-center p-5 md:px-10">
-            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-2xl rotate-x-90 hidden-animation opacity-0 transition-all duration-1000'>
+            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-xl sm:gap-x-3 rotate-x-90 hidden-animation opacity-0 transition-all duration-1000'>
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
                 Recent Collection
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>

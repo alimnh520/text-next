@@ -20,7 +20,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="h-screen bg-black text-white px-28 pt-12 flex flex-col sm:px-5 sm:pt-8 sm:h-auto md:px-10 md:pt-10 md:h-auto hidden-animation opacity-0 translate-y-[100px] transition-all duration-1000">
+        <div className="h-screen bg-black text-white px-28 pt-12 flex flex-col sm:px-5 sm:pt-8 sm:h-auto md:px-10 md:pt-10 md:h-auto hidden-animation opacity-0 -translate-y-[100px] sm:-translate-y-[50px] transition-all duration-1000">
             <div className="w-full flex gap-x-7 items-center h-60 border-b border-b-[hsla(0,0%,100%,0)] sm:flex-col sm:h-auto sm:gap-x-0 sm:space-y-5 sm:items-start md:flex-col md:h-auto md:items-start md:space-y-5">
                 <div className="flex flex-col gap-y-5 sm:justify-start">
                     <p className="text-2xl font-semibold">Subscribe Newsletter</p>

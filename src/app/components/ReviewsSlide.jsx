@@ -12,7 +12,7 @@ const ReviewSlider = () => {
     const [getWidth, setGetWidth] = useState(window.innerWidth);
     
     useEffect(() => {
-        if (getWidth > 768 && getWidth < 1024 ) {
+        if (getWidth < 1024 ) {
             setGetWidth(1);
         } else {
             setGetWidth(2);
