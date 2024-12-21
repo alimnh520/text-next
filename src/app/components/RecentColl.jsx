@@ -35,7 +35,7 @@ const RecentCollection = () => {
                 Recent Collection
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
             </div>
-            <p className=' uppercase font-semibold rotate-x-90 hidden-animation opacity-0 transition-all duration-1000'>Collect your loves with our newest arrivals</p>
+            <p className=' uppercase font-semibold rotate-x-90 hidden-animation opacity-0 transition-all duration-1000 sm:text-center'>Collect your loves with our newest arrivals</p>
             <Swiper
                 navigation={{
                     nextEl: '.custom-next',
