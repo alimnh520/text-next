@@ -6,7 +6,7 @@ import Brand from './Brand'
 const ProductCol = () => {
     return (
         <div className="w-64 flex flex-col items-center border border-gray-300 space-y-4 p-4 sm:w-10/12">
-            <div className="relative w-full">
+            <div className="relative w-full hidden-animation -translate-y-[100px] -translate-x-[100px] opacity-0 transition-all duration-500">
                 <select className="appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-full shadow-sm focus:outline-none focus:border-gray-500 custom-select">
                     <option value="">Category</option>
                     <option value="option1">Option 1</option>
@@ -15,7 +15,7 @@ const ProductCol = () => {
                 </select>
             </div>
 
-            <div className="relative w-full">
+            <div className="relative w-full hidden-animation -translate-y-[100px] -translate-x-[100px] opacity-0 transition-all duration-500">
                 <select className="appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-full shadow-sm focus:outline-none focus:border-gray-500 custom-select">
                     <option value="">Type</option>
                     <option value="option1">Option 1</option>
@@ -24,7 +24,7 @@ const ProductCol = () => {
                 </select>
             </div>
 
-            <div className="relative w-full">
+            <div className="relative w-full hidden-animation -translate-y-[100px] -translate-x-[100px] opacity-0 transition-all duration-500">
                 <select className="appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-full shadow-sm focus:outline-none focus:border-gray-500 custom-select">
                     <option value="">Size</option>
                     <option value="option1">Option 1</option>
@@ -32,7 +32,7 @@ const ProductCol = () => {
                     <option value="option3">Option 3</option>
                 </select>
             </div>
-            <div className="relative w-full">
+            <div className="relative w-full hidden-animation -translate-y-[100px] -translate-x-[100px] opacity-0 transition-all duration-500">
                 <select className="appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-full shadow-sm focus:outline-none focus:border-gray-500 custom-select">
                     <option value="">Color</option>
                     <option value="option1">Option 1</option>

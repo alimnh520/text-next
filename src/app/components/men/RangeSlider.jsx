@@ -19,7 +19,7 @@ const RangeSlider = () => {
     };
 
     return (
-        <div className="flex flex-col items-center p-4 relative right-5 w-full">
+        <div className="flex flex-col items-center p-4 relative right-5 w-full hidden-animation -translate-y-[100px] -translate-x-[100px] opacity-0 transition-all duration-1000">
             {/* Range Track */}
             <div className="relative w-48 h-1 bg-gray-200 rounded-full">
                 <div

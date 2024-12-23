@@ -266,7 +266,7 @@ input[type="range"]::-moz-range-thumb {
 
 .hidden-animation {
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .rotate-x-90{
   transform: rotateX(90deg);

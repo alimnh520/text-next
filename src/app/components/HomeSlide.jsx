@@ -21,7 +21,7 @@ const HomeSlide = () => {
             spaceBetween={30}
             slidesPerView={1}
             loop={true}
-            className='h-screen relative flex justify-center w-full text-white mt-20 sm:h-[410px] md:mt-48 md:h-[700px] text-5xl opacity-0 -translate-y-[100px] transition-all duration-1000 hidden-animation'
+            className='h-screen relative flex justify-center w-full text-white mt-20 sm:h-[410px] md:mt-48 md:h-[700px] text-5xl opacity-0 -translate-y-[100px] transition-all duration-500 hidden-animation'
         >
             <p className=' absolute z-10 top-2 w-full py-2 text-center bg-black text-white sm:text-sm sm:-mt-2 text-base'>
                 Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <Link href="" className=' underline underline-offset-8 font-semibold decoration-2 text-amber-600 hover:tracking-wider transition-all duration-300'>Shop Now</Link>

@@ -30,12 +30,12 @@ const RecentCollection = () => {
 
     return (
         <div className="w-full h-auto flex gap-y-4 flex-col items-center p-5 md:px-10">
-            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-xl sm:gap-x-3 rotate-x-90 hidden-animation opacity-0 transition-all duration-1000'>
+            <div className='flex gap-x-5 items-center justify-center uppercase text-4xl font-semibold sm:text-xl sm:gap-x-3 rotate-x-90 hidden-animation opacity-0 transition-all duration-500'>
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
                 Recent Collection
                 <div className='w-52 h-px bg-gray-400 sm:w-10 md:w-28'></div>
             </div>
-            <p className=' uppercase font-semibold rotate-x-90 hidden-animation opacity-0 transition-all duration-1000 sm:text-center'>Collect your loves with our newest arrivals</p>
+            <p className=' uppercase font-semibold rotate-x-90 hidden-animation opacity-0 transition-all duration-500 sm:text-center'>Collect your loves with our newest arrivals</p>
             <Swiper
                 navigation={{
                     nextEl: '.custom-next',
@@ -49,7 +49,7 @@ const RecentCollection = () => {
                 slidesPerView={getWidth}
                 spaceBetween={30}
                 loop
-                className=" w-full h-[450px] relative flex items-center justify-center sm:h-auto rotate-y-90 opacity-0 transition-all duration-1000 hidden-animation"
+                className=" w-full h-[450px] relative flex items-center justify-center sm:h-auto rotate-y-90 opacity-0 transition-all duration-500 hidden-animation"
             >
                 {
                     recentItems.map((allEml) => {

@@ -32,7 +32,7 @@ const Products = () => {
                 }).map((allEml) => {
                     return (
                         <div className='flex flex-col items-center justify-center relative group overflow-hidden' key={allEml.id}>
-                            <div className="w-full h-72 overflow-hidden text-gray-800 sm:h-80 md:h-64">
+                            <div className="w-full h-72 overflow-hidden text-gray-800 sm:h-80 md:h-64 hidden-animation translate-y-[100px] translate-x-[100px] opacity-0 transition-all duration-500">
                                 <img src={allEml.img1} alt="" className='h-full w-full group-hover:scale-110 transition-all duration-300 sm:object-cover sm:object-center' />
                             </div>
                             <p className='uppercase text-center mt-4 hover:text-red-500 transition-all'>{allEml.company}</p>
