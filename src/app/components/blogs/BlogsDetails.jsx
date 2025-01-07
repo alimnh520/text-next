@@ -10,7 +10,7 @@ const BlogsDetails = () => {
             {
                 blogsDetails.map((currElm) => {
                     return (
-                        <div className="pb-8 w-full shadow-[0_0_10px_rgba(0,0,0,0.2)] relative" key={currElm.id}>
+                        <div className="pb-8 w-full shadow-[0_0_10px_rgba(0,0,0,0.2)] relative hidden-animation opacity-0 -translate-x-[100px] transition-all duration-500" key={currElm.id}>
                             <img src={currElm.img} alt="" className='w-full h-80 object-cover' />
                             <Link href="" className='size-24 bg-red-500 absolute left-10 top-60 flex flex-col items-center justify-center rounded-lg text-white hover:text-red-500 hover:bg-transparent transition-all duration-300 sm:top-64 sm:left-5'>
                                 <p className='text-4xl font-bold'>{currElm.date}</p>

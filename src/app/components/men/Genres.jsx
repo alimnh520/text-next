@@ -2,7 +2,7 @@ import React from 'react'
 
 const Genres = () => {
     return (
-        <div className="relative w-full hidden-animation -translate-y-[100px] -translate-x-[100px] opacity-0 transition-all duration-1000">
+        <div className="relative w-full hidden-animation opacity-0 translate-x-[100px] transition-all duration-500">
             <label className="cr-wrapper">
                 <input type="checkbox" />
                 <div className="cr-input"></div>

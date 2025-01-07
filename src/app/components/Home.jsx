@@ -11,7 +11,7 @@ import Trading from './Trading'
 import ContextAnimation from './ContextAnimation'
 
 const Home = () => {
-    
+
     return (
         <ContextAnimation>
             <HomeSlide />

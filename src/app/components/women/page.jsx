@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Collection from '../men/Collection'
 import StoreData from '../men/StoreData'
 import ProductCol from '../men/ProductCol'

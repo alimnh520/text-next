@@ -3,8 +3,8 @@
 const page = () => {
     
     return (
-        <div className="flex items-center justify-center w-full h-screen bg-gray-50">
-            <div className="w-[700px] h-full p-6 rounded-md shadow-2xl md:w-10/12">
+        <div className="flex items-center justify-center w-full h-screen bg-gray-50 ">
+            <div className="w-[700px] h-5/6 p-6 rounded-md shadow-2xl md:w-10/12">
                 {/* Title */}
                 <h1 className="text-2xl font-bold text-center text-gray-900">Login</h1>
                 <p className="text-center text-gray-500 mt-2">
@@ -24,7 +24,7 @@ const page = () => {
                             type="email"
                             id="email"
                             placeholder="Username / Email address"
-                            className="w-full mt-1 px-4 py-2 border border-gray-200 placeholder:text-xs outline-none"
+                            className="w-full mt-1 px-4 py-2 border border-gray-200 placeholder:text-xs outline-none "
                         />
                     </div>
 

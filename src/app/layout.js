@@ -1,45 +1,25 @@
-'use client'
-import { usePathname } from "next/navigation";
 import "./globals.css";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
-import { useEffect, useState } from "react";
-import LoadingPage from "./components/LadingPage";
+import ChildCom from "./ChildCom";
+import { Jost } from 'next/font/google';
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
+export const metadata = {
+  title: "Dress collection",
+  description: "All kind of dresses",
+  icons: {
+    icon: '/logo-food.avif'
+  }
+};
 
 export default function RootLayout({ children }) {
-  const [loader, setLoader] = useState(true);
-
-  const pathName = usePathname();
-  const hideHeaderFooterOn = ['/components/login-form'];
-  const shouldHide = hideHeaderFooterOn.includes(pathName);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoader(false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  });
-
-  if (loader) {
-    return (
-      <html lang="en">
-        <body
-          className={`antialiased`}
-        >
-          <LoadingPage />
-        </body>
-      </html>
-    )
-  }
-
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {!shouldHide && <Header />}
-        {children}
-        {!shouldHide && <Footer />}
+      <body className={jost.className}>
+        <ChildCom children={children}/>
       </body>
     </html>
   );

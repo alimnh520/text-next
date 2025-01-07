@@ -36,6 +36,12 @@ const Header = () => {
         };
     }, [lastScrollTop]);
 
+    const handleNavigation = (location) => {
+        window.location.href = location;
+        console.log(location);
+        
+    };
+
     const linkCls = `relative group flex items-center justify-center gap-x-1 font-bold before:absolute before:content-[''] before:h-[3px] before:hover:w-10 before:mr-2 before:bg-red-500 before:bottom-0 before:transition-all before:duration-300 transition-all duration-300 hover:text-red-500 group h-20 uppercase text-sm sm:before:hidden sm:h-10  sm:w-full sm:justify-start ${navbar ? 'sm:-left-40' : 'sm:left-0'}`
 
     return (
@@ -43,46 +49,63 @@ const Header = () => {
             <TopHeader />
             <div className={`w-full h-20 flex items-center justify-between border-b px-20 transition-all duration-300 bg-white z-20 ${scrollY ? 'fixed top-0' : ' absolute'} ${scrollUp == 0 ? 'top-8 sm:top-12' : 'top-0 sm:pt-5'} sm:flex-col sm:h-auto sm:items-start sm:px-5 md:px-5 md:flex-col md:items-start md:h-auto md:py-3`}>
                 <button className={`w-28 h-10 bg-gray-600 absolute right-5 ${scrollUp == 0 ? '-top-1' : 'top-5'} z-50 hidden sm:flex items-center justify-between px-2 text-white font-bold`} onClick={() => setNavbar(!navbar)}>
-                    MENU 
-                    <GiHamburgerMenu className="text-xl"/>
+                    MENU
+                    <GiHamburgerMenu className="text-xl" />
                 </button>
                 <img src="/logo/nh-logo-monogram-emblem-style-with-crown-shape-design-template-free-vector-removebg-preview.png" alt="" className="w-32 animate-firstAnimate bg-white" />
 
                 <nav className={`flex items-center justify-center gap-x-16 sm:flex-col sm:items-start sm:w-full ${navbar ? 'sm:h-0' : 'sm:h-[360px]'} transition-all duration-300 sm:overflow-hidden sm:mt-5 sm:border-t sm:border-t-gray-400 md:flex-col md:items-start`}>
                     <ul className="flex items-center justify-center gap-x-10 sm:flex-col sm:items-start">
 
-                        <li className={`${linkCls} delay-0 ${pathName == '/' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => setNavbar(!navbar)}>
-                            <Link href="/">Home</Link >
+                        <li className={`${linkCls} delay-0 ${pathName == '/' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => {
+                            setNavbar(!navbar);
+                            handleNavigation('/');
+                        }}>
+                            <button>Home</button>
                         </li>
 
-                        <li className={`${linkCls} delay-75 ${pathName == '/components/men' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => setNavbar(!navbar)}>
-                            <Link href="/components/men">Men</Link >
-                            
+                        <li className={`${linkCls} delay-75 ${pathName == '/components/men' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => {
+                            setNavbar(!navbar);
+                            handleNavigation('/components/men');
+                        }}>
+                            <button>Men</button>
                         </li>
 
-                        <li className={`${linkCls} delay-100 ${pathName == '/components/women' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => setNavbar(!navbar)}>
-                            <Link href="/components/women">Women</Link >
+                        <li className={`${linkCls} delay-100 ${pathName == '/components/women' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => {
+                            setNavbar(!navbar);
+                            handleNavigation('/components/women');
+                        }}>
+                            <button>Women</button>
                         </li>
 
-                        <li className={`${linkCls} delay-150 ${pathName == '/components/baby' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => setNavbar(!navbar)}>
+                        <li className={`${linkCls} delay-150 ${pathName == '/components/baby' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => {
+                            setNavbar(!navbar);
+                            handleNavigation('/components/babys');
+                        }}>
                             <p className=" absolute px-1 rounded-[3px] text-white bg-red-500 top-1 right-5 text-[10px] before:absolute before:-z-10 before:h-2 before:w-4 before:bg-red-500 before:-bottom-0.5 before:left-2 before:-rotate-[30deg] sm:-top-5">New</p>
-                            <Link href="/components/babys">Baby Collections</Link >
+                            <button>Baby Collections</button>
                         </li>
 
                         <li className={`${linkCls} delay-200 ${pathName == '/components/shops' && '/components/checkout' && '/components/cart' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0'}`}>
-                            <Link href="">Pages</Link >
+                            <Link href="">Pages</Link>
                             <MdOutlineKeyboardArrowDown className="-mt-0.5 group-hover:rotate-180 transition-all duration-300 sm:-rotate-90" />
                             <div className={`absolute top-20 h-44 w-40 py-3 group-hover:flex hidden bg-white items-center justify-center sm:-top-1 sm:left-20 sm:border sm:border-gray-400 sm:z-20`}>
-                                <BlogMenu navbar={navbar} setNavbar={setNavbar}/>
+                                <BlogMenu navbar={navbar} setNavbar={setNavbar} />
                             </div>
                         </li>
 
-                        <li className={`${linkCls} delay-300 ${pathName == '/components/blogs' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => setNavbar(!navbar)}>
-                            <Link href="/components/blogs">Blogs</Link >
+                        <li className={`${linkCls} delay-300 ${pathName == '/components/blogs' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => {
+                            setNavbar(!navbar);
+                            handleNavigation('/components/blogs');
+                        }}>
+                            <button>Blogs</button>
                         </li>
 
-                        <li className={`${linkCls} delay-500 ${pathName == '/components/contact' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => setNavbar(!navbar)}>
-                            <Link href="/components/contact">Contact</Link >
+                        <li className={`${linkCls} delay-500 ${pathName == '/components/contact' ? 'text-red-500 before:w-10 ' : 'text-black before:w-0 '}`} onClick={() => {
+                            setNavbar(!navbar);
+                            handleNavigation('/components/contact');
+                        }}>
+                            <button>Contact</button>
                         </li>
                     </ul>
 

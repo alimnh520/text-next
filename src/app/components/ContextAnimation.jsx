@@ -13,7 +13,7 @@ const ContextAnimation = ({ children }) => {
                     }
                 });
             },
-            { threshold: 0.5 }
+            { threshold: 0}
         );
         const elements = document.querySelectorAll(".hidden-animation");
         elements.forEach((el) => observer.observe(el));
